@@ -13,21 +13,13 @@ border:1px solid black;
 </head>
 <body>
 	<h1>Hello</h1>
-	<table>
-		<%
+	<table><%
 			for (int i = 1; i < 11; i++) {
-		%><tr>
-			<%
+		%><tr><%
 				for (int j = 1; j < 11; j++) {
-			%>
-
-			<td><%=i*j%></td>
-
-			<%
+			%><td><%=i*j%></td><%
 				}
-			%>
-		</tr>
-		<%
+			%></tr><%
 			}
 		%>
 	</table>
