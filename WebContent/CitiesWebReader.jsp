@@ -10,16 +10,14 @@
 </head>
 <body>
 	<h1>Lista Miast</h1>
-
-	<%
-		System.out.println("?");
+	<table>
+	<%	
 		ArrayList<String> al = lista.readCities();
-		System.out.println(al.size());
-		for (int i = 0; i < lista.readCities().size(); i++) {
-	%>
+		for (int i = 0; i < al.size(); i++) {
+	%><tr><td>
 	<%=al.get(i)%>
 	<%
 		}
-	%>
-
+	%></td></tr>
+</table>
 </body>
