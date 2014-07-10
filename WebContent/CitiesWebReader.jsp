@@ -12,10 +12,12 @@
 	<h1>Lista Miast</h1>
 
 	<%
-		ArrayList al = lista.readCities();
+		System.out.println("?");
+		ArrayList<String> al = lista.readCities();
+		System.out.println(al.size());
 		for (int i = 0; i < lista.readCities().size(); i++) {
 	%>
-		<%= al.get(i) %>
+	<%=al.get(i)%>
 	<%
 		}
 	%>
